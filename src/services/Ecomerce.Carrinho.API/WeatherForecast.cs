@@ -1,6 +1,6 @@
 using System;
 
-namespace Ecomerce.Identidade.API
+namespace Ecomerce.Carrinho.API
 {
     public class WeatherForecast
     {
