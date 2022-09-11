@@ -1,7 +1,6 @@
 ﻿using Ecomerce.Identidade.API.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Permissions;
 using System.Threading.Tasks;
 
 namespace Ecomerce.Identidade.API.Controllers
