@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ecomerce.Identidade.API.Controllers
 {
+    [ApiController]
     [Route("api/identidade")]
     public class AuthController : Controller
     {
