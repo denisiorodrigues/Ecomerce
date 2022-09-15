@@ -49,12 +49,9 @@ namespace Ecomerce.Identidade.API
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(bearerOptions =>
             {
-                //somente acesso ao http
-                bearerOptions.RequireHttpsMetadata = true;
-                //Salvar o token na instância assim que o login for realizado comc uscesso
-                bearerOptions.SaveToken = true;
-                //Configuyração do token
-                bearerOptions.TokenValidationParameters = new TokenValidationParameters
+                bearerOptions.RequireHttpsMetadata = true;//somente acesso ao http
+                bearerOptions.SaveToken = true;//Salvar o token na instância assim que o login for realizado comc uscesso
+                bearerOptions.TokenValidationParameters = new TokenValidationParameters //Configuyração do token
                 {
                     ValidateIssuerSigningKey = true,//Validar o emissor com base na assinatura
                     IssuerSigningKey = new SymmetricSecurityKey(key),//Criando o emissor
