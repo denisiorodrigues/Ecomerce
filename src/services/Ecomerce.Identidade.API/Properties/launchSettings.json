@@ -1,30 +1,39 @@
 {
-  "profiles": {
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "Ecomerce.Identidade.API": {
-        "commandName": "Project",
-        "launchBrowser": true,
-        "launchUrl": "swagger",
-        "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
+    "profiles": {
+        "IIS Development": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
         },
-        "applicationUrl": "https://localhost:5001;http://localhost:5000"
+        "IIS Staging": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Staging"
+            },
+            "applicationUrl": "https://localhost:5001;http://localhost:5000"
+        },
+        "IIS Production": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Production"
+            },
+            "applicationUrl": "https://localhost:5001;http://localhost:5000"
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+            "publishAllPorts": true,
+            "useSSL": true
+        }
     },
-    "Docker": {
-      "commandName": "Docker",
-      "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
-      "publishAllPorts": true,
-      "useSSL": true
-    }
-  },
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
