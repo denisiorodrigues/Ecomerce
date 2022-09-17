@@ -56,7 +56,7 @@ namespace Ecomerce.Identidade.API
                     ValidateIssuerSigningKey = true,//Validar o emissor com base na assinatura
                     IssuerSigningKey = new SymmetricSecurityKey(key),//Criando o emissor
                     ValidateIssuer = true, // Validar sendo da API que foi configurada
-                    ValidateAudience = true, // Onde esse token vais er válido
+                    ValidateAudience = true, // Onde esse token vai ser válido(em que site)
                     ValidAudience = appSettings.ValidadoEm, //Criando a audiencia
                     ValidIssuer = appSettings.Emissor //Criando um Issuer
                 };
